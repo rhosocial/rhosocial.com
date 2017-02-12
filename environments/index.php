@@ -43,7 +43,6 @@ return [
         ],
         'setCookieValidationKey' => [
             'common/config/request/request-local.php',
-            'common/config/request/request.php',
         ],
     ],
     'Production' => [
@@ -59,7 +58,6 @@ return [
         ],
         'setCookieValidationKey' => [
             'common/config/request/request-local.php',
-            'common/config/request/request.php',
         ],
     ],
 ];

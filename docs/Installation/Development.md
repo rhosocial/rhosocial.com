@@ -30,7 +30,7 @@ dependencies before developing it.
 Before installing the dependency packages, first make sure that:
 The installation will overwrite all the files specified under the `enviroments`
 folder. If you do not want to overwrite, you can modify the `post-install-cmd`
-section of the composer.json file as the following way:
+section of the `composer.json` file as the following way:
 
 ```
 "post-install-cmd": "php init --env=Development --overwrite=n"
@@ -47,9 +47,28 @@ parameter.
 
 ## Add to virtual hosts.
 
+Take Apache 2.4 as an example:
 
+### Windows
+
+[Windows-Apache-vhosts](Windows-Apache-vhosts.md)
+
+### Linux
+
+[Linux-Apache-vhosts](Linux-Apache-vhosts.md)
 
 ## Add local parameters.
+
+All local-only parameters should be written in a file with a suffix of '-local.php',
+and add them into ignorance list.
+This is done to prevent local parameters (including sensitive information) from
+affecting the contents of the repository.
+
+### Cookie Validation Key
+
+The cookie validation key has been generated during installation. 
+If you want to modify it, please do not modify the `request.php`, but modify the
+`request-local.php`, and the new string length can not be less than 32.
 
 ### MySQL
 
