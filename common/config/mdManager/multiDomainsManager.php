@@ -12,7 +12,7 @@
 
 return [
     'class' => 'common\components\MultiDomainsManager',
-    'baseDomain' => $baseDomain,
+    'baseDomain' => BASE_DOMAIN,
     'subDomains' => [
         'sso' => [
             'component' => require(__DIR__ . '/../../../sso.rhosocial.com/config/urlManager.php'),

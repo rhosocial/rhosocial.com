@@ -11,7 +11,7 @@
  */
 
 return [
-    'csrfCookie' => ['httpOnly' => true, 'domain' => '.' . $baseDomain],
+    'csrfCookie' => ['httpOnly' => true, 'domain' => '.' . BASE_DOMAIN],
     // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
     'cookieValidationKey' => '',
 ];

@@ -1,11 +1,13 @@
 #!/usr/bin/env php
 <?php
 /**
- * Yii console bootstrap file.
- *
- * @link http://www.yiiframework.com/
- * @copyright Copyright (c) 2008 Yii Software LLC
- * @license http://www.yiiframework.com/license/
+ *   _   __ __ _____ _____ ___  ____  _____
+ *  | | / // // ___//_  _//   ||  __||_   _|
+ *  | |/ // /(__  )  / / / /| || |     | |
+ *  |___//_//____/  /_/ /_/ |_||_|     |_|
+ * @link https://vistart.me/
+ * @copyright Copyright (c) 2016 - 2017 vistart
+ * @license https://vistart.me/license/
  */
 
 defined('YII_DEBUG') or define('YII_DEBUG', false);
@@ -17,10 +19,10 @@ require(__DIR__ . '/common/config/bootstrap.php');
 require(__DIR__ . '/console/config/bootstrap.php');
 
 $config = yii\helpers\ArrayHelper::merge(
-    require(__DIR__ . '/common/config/main.php'),
-    getParamsFromFile(__DIR__ . '/common/config/main-local.php'),
+    require(__DIR__ . '/common/config/main-console.php'),
+    require(__DIR__ . '/common/config/main-console-local.php'),
     require(__DIR__ . '/console/config/main.php'),
-    getParamsFromFile(__DIR__ . '/console/config/main-local.php')
+    require(__DIR__ . '/console/config/main-local.php')
 );
 
 $application = new yii\console\Application($config);

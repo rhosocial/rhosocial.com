@@ -31,5 +31,5 @@ function getParamsFromFile($file, $default = [])
 {
     return file_exists($file) ? require($file) : $default;
 }
-$baseDomain = getParamsFromFile(__DIR__ . '/base/baseDomain-local.php', getParamsFromFile(__DIR__ . '/base/baseDomain.php', 'example.com'));
+$baseDomain = getParamsFromFile(__DIR__ . '/base/baseDomain-local.php', getParamsFromFile(__DIR__ . '/base/baseDomain.php', 'rhosocial.com'));
 defined('BASE_DOMAIN') or define('BASE_DOMAIN', $baseDomain);

@@ -9,12 +9,12 @@
  * @license https://vistart.me/license/
  */
 return [
-    'id' => 'app-common-tests',
+    'id' => 'rhosocial-common-tests',
     'basePath' => dirname(__DIR__),
     'components' => [
         'user' => [
-            'class' => 'yii\web\User',
-            'identityClass' => 'common\models\User',
+            'class' => 'common\web\SSOUser',
+            'identityClass' => 'common\models\user\User',
         ],
     ],
 ];

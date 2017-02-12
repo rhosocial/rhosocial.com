@@ -13,5 +13,5 @@
 return [
     'name' => 'rhosocial_identity',
     'httpOnly' => true,
-    'domain' => '.' . $baseDomain,
+    'domain' => '.' . BASE_DOMAIN,
 ];
