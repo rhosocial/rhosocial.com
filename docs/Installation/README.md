@@ -20,7 +20,7 @@ Apache 2.4
 
 ## Production
 
-For more details, please see [Production](Produciton.md).
+For more details, please see [Production](Production.md).
 
 ## Development
 
