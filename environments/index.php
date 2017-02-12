@@ -32,34 +32,34 @@ return [
     'Development' => [
         'path' => 'dev',
         'setWritable' => [
-            'backend/runtime',
-            'backend/web/assets',
-            'frontend/runtime',
-            'frontend/web/assets',
+            'www.rhosocial.com/runtime',
+            'www.rhosocial.com/web/assets',
+            'sso.rhosocial.com/runtime',
+            'sso.rhosocial.com/web/assets',
         ],
         'setExecutable' => [
             'yii',
             'yii_test',
         ],
         'setCookieValidationKey' => [
-            'backend/config/main-local.php',
-            'frontend/config/main-local.php',
+            'common/config/request/request-local.php',
+            'common/config/request/request.php',
         ],
     ],
     'Production' => [
         'path' => 'prod',
         'setWritable' => [
-            'backend/runtime',
-            'backend/web/assets',
-            'frontend/runtime',
-            'frontend/web/assets',
+            'www.rhosocial.com/runtime',
+            'www.rhosocial.com/web/assets',
+            'sso.rhosocial.com/runtime',
+            'sso.rhosocial.com/web/assets',
         ],
         'setExecutable' => [
             'yii',
         ],
         'setCookieValidationKey' => [
-            'backend/config/main-local.php',
-            'frontend/config/main-local.php',
+            'common/config/request/request-local.php',
+            'common/config/request/request.php',
         ],
     ],
 ];
