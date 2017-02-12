@@ -45,6 +45,9 @@ composer install
 If you want to see the details of installation procedure, please attach the `-vvv`
 parameter.
 
+The code package already contains the `composer.lock`, which contains the source of all dependent packages.
+After you execute the above command, all the dependency packages are downloaded directly from its specified source.
+
 ## Add to virtual hosts.
 
 Take Apache 2.4 as an example:
