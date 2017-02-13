@@ -21,7 +21,8 @@
         "yiisoft/yii2-redis": "~2.0.5",
         "rhosocial/yii2-user": "dev-master",
         "rhosocial/yii2-base-models": "dev-master",
-        "rhosocial/helpers": "^1.0"
+        "rhosocial/helpers": "^1.0",
+        "bower-asset/vue": "~2.1"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.0",

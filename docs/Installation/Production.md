@@ -14,7 +14,15 @@ dependencies before developing it.
 
 ## Install all dependencies.
 
-Please execute the following command to install all dependencies:
+The installation process defaults to setting the runtime environment to "development"
+instead of "production", so you need to modify the contents of the "post-install-cmd"
+section of `composer.json` before performing the installation, for example:
+
+```
+"post-install-cmd": "php init --env=Production --overwrite=y"
+```
+
+Then, please execute the following command to install all dependencies:
 
 ```
 composer install --no-dev --no-interaction

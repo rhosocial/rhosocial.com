@@ -1,11 +1,11 @@
 <?php
 
-namespace www_rhosocial_com\assets;
+namespace reg_rhosocial_com\assets;
 
 use yii\web\AssetBundle;
 
 /**
- * www.rhosocial.com application asset bundle.
+ * reg.rhosocial.com application asset bundle.
  */
 class AppAsset extends AssetBundle
 {

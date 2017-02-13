@@ -5,7 +5,7 @@ namespace sso_rhosocial_com\assets;
 use yii\web\AssetBundle;
 
 /**
- * Main frontend application asset bundle.
+ * sso.rhosocial.com application asset bundle.
  */
 class AppAsset extends AssetBundle
 {

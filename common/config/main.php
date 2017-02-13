@@ -13,7 +13,7 @@ return [
     'bootstrap' => require(__DIR__ . '/bootstrap/bootstrap.php'),
     'modules' => require(__DIR__ . '/modules/modules.php'),
     'components' => [
-        //'assetManager' => require(__DIR__ . '/assetManager/assetManager.php'),
+        'assetManager' => require(__DIR__ . '/assetManager/assetManager.php'),
         'authManager' => require(__DIR__ . '/authManager/authManager.php'),
         'cache' => [
             'class' => 'yii\caching\FileCache',

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "c49cb08246523e86fcb99b8e6ed759c3",
+    "content-hash": "64778b6d6f9276741dc9636ab59cd307",
     "packages": [
         {
             "name": "bower-asset/bootstrap",
@@ -166,6 +166,22 @@
                     "package.json"
                 ]
             }
+        },
+        {
+            "name": "bower-asset/vue",
+            "version": "v2.1.10",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vuejs/vue.git",
+                "reference": "994aee4f869d68a00c3b9d87daa9c8d84623ac42"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vuejs/vue/zipball/994aee4f869d68a00c3b9d87daa9c8d84623ac42",
+                "reference": "994aee4f869d68a00c3b9d87daa9c8d84623ac42",
+                "shasum": ""
+            },
+            "type": "bower-asset-library"
         },
         {
             "name": "bower-asset/yii2-pjax",

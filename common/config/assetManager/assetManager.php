@@ -15,7 +15,7 @@ return [
         'yii\web\JqueryAsset' => [
             'sourcePath' => null,
             'js' => [
-                YII_ENV_DEV ? 'https://cdn.bootss.com/jquery/2.2.4/jquery.js' : 'https://cdn.bootss.com/jquery/2.2.4/jquery.js',
+                YII_ENV_DEV ? 'https://cdn.bootcss.com/jquery/2.2.4/jquery.js' : 'https://cdn.bootcss.com/jquery/2.2.4/jquery.js',
             ],
             'jsOptions' => [
                 'position' => \yii\web\View::POS_HEAD,
@@ -40,6 +40,12 @@ return [
             'sourcePath' => null,
             'js' => [
                 YII_ENV_DEV ? 'https://cdn.bootcss.com/typeahead.js/0.11.1/typeahead.bundle.js' : 'https://cdn.bootcss.com/typeahead.js/0.11.1/typeahead.bundle.min.js',
+            ],
+        ],
+        'common\assets\VueAsset' => [
+            'sourcePath' => null,
+            'js' => [
+                YII_ENV_DEV ? 'https://cdn.bootcss.com/vue/2.1.10/vue.js' : 'https://cdn.bootcss.com/vue/2.1.10/vue.min.js',
             ],
         ],
     ],
