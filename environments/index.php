@@ -32,10 +32,12 @@ return [
     'Development' => [
         'path' => 'dev',
         'setWritable' => [
-            'www.rhosocial.com/runtime',
-            'www.rhosocial.com/web/assets',
+            'reg.rhosocial.com/runtime',
+            'reg.rhosocial.com/web/assets',
             'sso.rhosocial.com/runtime',
             'sso.rhosocial.com/web/assets',
+            'www.rhosocial.com/runtime',
+            'www.rhosocial.com/web/assets',
         ],
         'setExecutable' => [
             'yii',
@@ -48,10 +50,12 @@ return [
     'Production' => [
         'path' => 'prod',
         'setWritable' => [
-            'www.rhosocial.com/runtime',
-            'www.rhosocial.com/web/assets',
+            'reg.rhosocial.com/runtime',
+            'reg.rhosocial.com/web/assets',
             'sso.rhosocial.com/runtime',
             'sso.rhosocial.com/web/assets',
+            'www.rhosocial.com/runtime',
+            'www.rhosocial.com/web/assets',
         ],
         'setExecutable' => [
             'yii',

@@ -10,26 +10,29 @@ if it is currently a production environment, replace `rhosocial.com.local` with 
 Now add the available sites under the Apache's `sites-available`(`/etc/apache2/sites-available`) folder:
 
 ```
-www.rhosocial.com.conf
 sso.rhosocial.com.conf
+reg.rhosocial.com.conf
+www.rhosocial.com.conf
 ```
 
 You must specify the `ServerName` directive in the above files with your own base domain.
 
-The default local domain is `rhosocial.com.local`.
+The default local domain is `rhosocial.com.local` ([/common/config/base/baseDomain-local.php](https://github.com/rhosocial/rhosocial.com/blob/master/environments/dev/common/config/base/baseDomain-local.php)).
 
 Next, you should specify an loop-back IP address for each domain name (`/etc/hosts`), like following
 
 ```
-127.0.0.1 www.rhosocial.com.local
 127.0.0.1 sso.rhosocial.com local
+127.0.0.1 reg.rhosocial.com.local
+127.0.0.1 www.rhosocial.com.local
 ```
 
 Then, please enable above sites:
 
 ```
-a2ensite www.rhosocial.com.conf
 a2ensite sso.rhosocial.com.conf
+a2ensite reg.rhosocial.com.conf
+a2ensite www.rhosocial.com.conf
 ```
 
 > Note: Maybe you need the root privileges.

@@ -7,23 +7,22 @@ $params = array_merge(
 );
 
 return [
-    'id' => 'www.rhosocial.com',
+    'id' => 'reg.rhosocial.com',
     'basePath' => dirname(__DIR__),
-    'controllerNamespace' => 'www_rhosocial_com\controllers',
     'bootstrap' => ['log'],
-    'modules' => [],
+    'controllerNamespace' => 'reg_rhosocial_com\controllers',
     'components' => [
         'request' => [
-            'csrfParam' => '_csrf-www_rhosocial_com',
+            'csrfParam' => '_csrf-reg_rhosocial_com',
         ],
         'user' => [
             'identityClass' => 'common\models\user\User',
             'enableAutoLogin' => true,
-            'identityCookie' => ['name' => '_identity-www_rhosocial_com', 'httpOnly' => true],
+            'identityCookie' => ['name' => '_identity-reg_rhosocial_com', 'httpOnly' => true],
         ],
         'session' => [
-            // this is the name of the session cookie used for login on the backend
-            'name' => 'www_rhosocial_com',
+            // this is the name of the session cookie used for login on the frontend
+            'name' => 'reg_rhosocial_com',
         ],
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,

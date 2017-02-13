@@ -1,5 +1,5 @@
 # nginx logs
-backend-access.log
-backend-error.log
-frontend-access.log
-frontend-error.log
+www.rhosocial.com-access.log
+www.rhosocial.com-error.log
+sso.rhosocial.com-access.log
+sso.rhosocial.com-error.log

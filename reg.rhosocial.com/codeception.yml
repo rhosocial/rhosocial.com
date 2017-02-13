@@ -1,4 +1,4 @@
-namespace: sso_rhosocial_com\tests
+namespace: reg_rhosocial_com\tests
 actor: Tester
 paths:
     tests: tests

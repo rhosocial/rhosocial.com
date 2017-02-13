@@ -1,4 +1,4 @@
-namespace: backend\tests
+namespace: www_rhosocial_com\tests
 actor: Tester
 paths:
     tests: tests
