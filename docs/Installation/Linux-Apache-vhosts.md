@@ -22,7 +22,7 @@ The default local domain is `rhosocial.com.local` ([/common/config/base/baseDoma
 Next, you should specify an loop-back IP address for each domain name (`/etc/hosts`), like following
 
 ```
-127.0.0.1 sso.rhosocial.com local
+127.0.0.1 sso.rhosocial.com.local
 127.0.0.1 reg.rhosocial.com.local
 127.0.0.1 www.rhosocial.com.local
 ```
@@ -41,6 +41,8 @@ Finally, reload Apache, and open browser, try to visit the sites just enabled.
 
 ## SSL
 
+### Preface
+
 The browser considers that a valid certificate must be issued by a trusted certificate authority.
 
 In the development phase, you can choose to use self-issued certificate,
@@ -57,7 +59,22 @@ is not credible, or even directly to prevent access.
 In order not to affect brand promotion, but also want to use a trusted certificate,
 you can apply for additional real domain name, and issue a certificate.
 
+### Virtual Host
+
+This feature requires SSL modules to be enabled:
+
+```
+a2enmod ssl
+```
+
+> This command may need root privileges, and restart Apache after enabling it.
+
+Then, enable the SSL engine in the virtual host settings, specifying the location of the certificate, key, and CA certificate.
+You can refer to the examples listed below.
+
 ## Example
+
+### Normal
 
 ```
 <VirtualHost *:80>
@@ -66,5 +83,21 @@ you can apply for additional real domain name, and issue a certificate.
     DocumentRoot /var/www/www.rhosocial.com
     ErrorLog ${APACHE_LOG_DIR}/error.log
     CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
+```
+
+### SSL
+
+```
+<VirtualHost *:443>
+    ServerName www.rhosocial.com
+    ServerAdmin webmaster@rhosocial.com
+    DocumentRoot /var/www/www.rhosocial.com
+    ErrorLog ${APACHE_LOG_DIR}/error.log
+    CustomLog ${APACHE_LOG_DIR}/access.log combined
+    SSLEngine on
+    SSLCertificateKeyFile /where/the/key/is/located/www.rhosocial.com.key
+    SSLCertificateFile /where/the/certificate/is/located/www.rhosocial.com.crt
+    SSLCACertificateFile /where/the/certificate/is/located/ca.crt 
 </VirtualHost>
 ```
