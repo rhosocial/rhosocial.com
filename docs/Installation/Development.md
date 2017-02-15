@@ -67,6 +67,8 @@ If you want to modify it, please do not modify the `request.php`, but modify the
 
 ### MySQL
 
+You need to set the MySQL hostname, user name, password, database, table prefix, character set.
+
 ### MongoDB
 
 ### Redis
