@@ -8,7 +8,7 @@ rhosocial.com
 
 This service will help you to record your personal information, telephone, e-mail,
 address, anniversary, URL, educational experience, work experience and other records,
-and record these personal information changes and distribution records.
+and record these personal information changes and distribution.
 
 ### Social Relationship
 
