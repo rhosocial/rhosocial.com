@@ -23,4 +23,4 @@ require(__DIR__ . '/../config/bootstrap.php');
 
 $config = require(__DIR__ . '/../config/test-local.php');
 
-(new yii\web\Application($config))->run();
+(new common\web\Application($config))->run();

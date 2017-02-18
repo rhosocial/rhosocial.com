@@ -44,7 +44,7 @@ class IndexAction extends Action
                 $result = $ex->getMessage();
             }
             if ($result === false) {
-                return $this->controller->render('index', ['registerForm' => $form, 'error'=> $result])
+                return $this->controller->render('index', ['registerForm' => $form, 'error'=> $result]);
             }
         }
     }

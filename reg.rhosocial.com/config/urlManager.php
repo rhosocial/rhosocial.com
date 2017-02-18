@@ -14,6 +14,6 @@ return [
     'enablePrettyUrl' => true,
     'showScriptName' => false,
     'rules' => [
-        '' => 'user/register',
+        '' => 'register/index',
     ],
 ];

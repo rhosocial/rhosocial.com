@@ -20,5 +20,8 @@ return [
         'www' => [
             'component' => require(__DIR__ . '/../../../www.rhosocial.com/config/urlManager.php'),
         ],
+        'reg' => [
+            'component' => require(__DIR__ . '/../../../reg.rhosocial.com/config/urlManager.php'),
+        ]
     ],
 ];

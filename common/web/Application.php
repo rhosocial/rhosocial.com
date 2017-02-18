@@ -12,11 +12,18 @@
 
 namespace common\web;
 
+use common\components\MultiDomainsManager;
+
+/**
+ * @property-read MultiDomainsManager $multiDomainsManager Multi-domains Manager.
+ * 
+ * @author vistart <i@vistart.me>
+ */
 class Application extends \yii\web\Application
 {
     /**
      * 
-     * @return type
+     * @return MultiDomainsManager
      */
     public function getMultiDomainsManager()
     {
