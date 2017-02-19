@@ -33,17 +33,19 @@ return [
                 ],
             ],
         ],
+        'i18n' => [
+            'translations' => [
+                'reg*' => [
+                    'class' => 'yii\i18n\PhpMessageSource',
+                    'sourceLanguage' => 'en-US',
+                    'basePath' => '@reg_rhosocial_com/messages',
+                ],
+            ]
+        ],
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
-        /*
-        'urlManager' => [
-            'enablePrettyUrl' => true,
-            'showScriptName' => false,
-            'rules' => [
-            ],
-        ],
-        */
+        'urlManager' => require('urlManager.php'),
     ],
     'params' => $params,
 ];

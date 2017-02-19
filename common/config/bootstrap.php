@@ -15,6 +15,7 @@
 Yii::setAlias('@common', dirname(__DIR__));
 Yii::setAlias('@rhosocial_com', dirname(dirname(__DIR__)));
 Yii::setAlias('@www_rhosocial_com', dirname(dirname(__DIR__)) . '/www.rhosocial.com');
+Yii::setAlias('@reg_rhosocial_com', dirname(dirname(__DIR__)) . '/reg.rhosocial.com');
 Yii::setAlias('@sso_rhosocial_com', dirname(dirname(__DIR__)) . '/sso.rhosocial.com');
 
 Yii::setAlias('@console', dirname(dirname(__DIR__)) . '/console');

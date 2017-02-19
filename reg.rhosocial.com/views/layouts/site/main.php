@@ -21,6 +21,7 @@ use common\widgets\Alert;
 CommonAsset::register($this);
 VueAsset::register($this);
 ?>
+
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
 <html lang="<?= Yii::$app->language ?>">
@@ -86,3 +87,4 @@ VueAsset::register($this);
 </body>
 </html>
 <?php $this->endPage() ?>
+
