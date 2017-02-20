@@ -37,7 +37,7 @@ You need to add at least the following eight configuration files:
 
 Add namespace setting statement to the common bootstrap file, like following:
 
-```
+```php
 Yii::setAlias('@my_rhosocial_com', dirname(dirname(__DIR__)) . '/my.rhosocial.com');
 ```
 
@@ -45,7 +45,7 @@ Yii::setAlias('@my_rhosocial_com', dirname(dirname(__DIR__)) . '/my.rhosocial.co
 
 Please specify the category name in the `i18n` component in the `main.php` config file, like following:
 
-```
+```php
 'i18n' => [
     'translations' => [
         'my*' => [
@@ -85,7 +85,7 @@ In the production environment, you need to prepare the following files and folde
 
 Then, you need to specify the directories which need to set writable permission:
 
-```
+```php
 return [
     'Development' => [
         'path' => 'dev',
