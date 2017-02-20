@@ -5,7 +5,7 @@ Take `my.rhosocial.com` as example:
 ## Add new directory
 
 In the project root directory, create a new 'my.rhosocial.com' folder.
-Then in the folder, you need to create the following folder:
+Then in the folder, you need to create the following folders:
 
     /assets               Asset Bundles.
     /config               Configuration.
@@ -43,7 +43,7 @@ Yii::setAlias('@my_rhosocial_com', dirname(dirname(__DIR__)) . '/my.rhosocial.co
 
 ## Add translation
 
-Please specify the category name in the i18n component in the `main.php` config file, like following:
+Please specify the category name in the `i18n` component in the `main.php` config file, like following:
 
 ```
 'i18n' => [
@@ -57,7 +57,7 @@ Please specify the category name in the i18n component in the `main.php` config 
     ],
 ```
 
-## Add assets, models, controllers, views, modules, etc
+## Add assets, models, controllers, views, modules, components, widgets, etc
 
 ## Add test cases
 
@@ -108,4 +108,4 @@ return [
 ];
 ```
 
-After that, the above two directories will be set to "writable" when the init command is executed.
+After that, the above two directories will be set to "writable" when the `init` command is executed.
