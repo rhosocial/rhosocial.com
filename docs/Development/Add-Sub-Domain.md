@@ -52,9 +52,9 @@ Please specify the category name in the `i18n` component in the `main.php` confi
             'class' => 'yii\i18n\PhpMessageSource',
                 'sourceLanguage' => 'en-US',
                 'basePath' => '@my_rhosocial_com/messages',
-            ],
-        ]
-    ],
+        ],
+    ]
+],
 ```
 
 ## Add assets, models, controllers, views, modules, components, widgets, etc
