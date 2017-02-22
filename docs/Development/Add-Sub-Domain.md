@@ -59,6 +59,8 @@ Please specify the category name in the `i18n` component in the `main.php` confi
 
 ## Add assets, models, controllers, views, modules, components, widgets, etc
 
+### Assets
+
 ## Add test cases
 
 ## Environments
