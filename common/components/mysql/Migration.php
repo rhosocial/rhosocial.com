@@ -10,13 +10,13 @@
  * @license https://vistart.me/license/
  */
 
-namespace common\models\user;
+namespace common\components\mysql;
 
 /**
  * @version 1.0
  * @author vistart <i@vistart.me>
  */
-class User extends \rhosocial\user\User
+class Migration extends \yii\db\Migration
 {
-    
+    use SchemaBuilderTrait;
 }

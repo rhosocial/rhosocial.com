@@ -15,7 +15,14 @@ return [
         'fixture' => [
             'class' => 'yii\console\controllers\FixtureController',
             'namespace' => 'common\fixtures',
-          ],
+        ],
+        'migrate' => [
+            'class' => 'yii\console\controllers\MigrateController',
+            'migrationNamespaces' => [
+                'common\migrations',
+                'console\migrations',
+            ],
+        ],
     ],
     'components' => [
         'log' => [
@@ -25,6 +32,14 @@ return [
                     'levels' => ['error', 'warning'],
                 ],
             ],
+        ],
+    ],
+    'modules' => [
+        'user' => [
+            'class' => 'console\modules\user\Module',
+        ],
+        'org' => [
+            'class' => 'console\modules\org\Module',
         ],
     ],
     'params' => $params,

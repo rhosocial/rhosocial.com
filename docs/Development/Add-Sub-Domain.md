@@ -61,6 +61,23 @@ Please specify the category name in the `i18n` component in the `main.php` confi
 
 ### Assets
 
+### Models
+
+### Modules
+
+You can create a module by referring to the instructions in this [article](http://www.yiiframework.com/doc-2.0/guide-structure-modules.html#creating-modules).
+
+Then you need to specify your own module in the `modules` property of the application configuration.
+
+```
+    'modules' => [
+        '<Module Name>' => [
+            'class' => '<Module Class>',
+            '<Other Properties>'
+        ],
+    ],
+```
+
 ## Add test cases
 
 ## Environments

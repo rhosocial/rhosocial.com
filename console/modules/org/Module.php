@@ -10,13 +10,18 @@
  * @license https://vistart.me/license/
  */
 
-namespace common\models\user;
+namespace console\modules\org;
 
 /**
  * @version 1.0
  * @author vistart <i@vistart.me>
  */
-class User extends \rhosocial\user\User
+class Module extends \yii\base\Module
 {
+    public $controllerNamespace = 'console\modules\org\controllers';
     
+    public function init()
+    {
+        parent::init();
+    }
 }
